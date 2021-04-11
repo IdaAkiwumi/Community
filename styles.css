@@ -18,7 +18,7 @@ body {
     background-color:white;
     display: grid;
     grid-template-columns: [col-start] 1fr [col-end] 1fr;
-    /*grid-template-rows: [row-start] 1fr [row-2] 2fr;*/
+    /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
     
     grid-template-areas: 
     "a a"
