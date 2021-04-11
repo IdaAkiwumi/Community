@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
 }
 
 #container {
-    border-radius: 5px;
     min-width:600px;
     margin:6rem 18rem;
     background-color:white;
@@ -25,7 +25,20 @@ body {
     "b c";
 }
 
-.join{
+#container, .join{
+    border-radius: 10px;
+}
+
+#container, .subs{
+    border-bottom-left-radius: 10px;
+}
+
+
+#container,.why{
+    border-bottom-right-radius: 10px;
+}
+
+.join {
     padding:2rem;
     grid-area: a;
 
