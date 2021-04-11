@@ -1,23 +1,98 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 body {
     background-color: hsl(218, 22%, 67%);
-    font-family: sans-serif;
-    position:relative;
+    font-family: "Karla", sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    position: relative;
 }
 
-.container {
-background-color: rgb(197, 6, 6);
+#container {
+    border-radius: 5px;
+    min-width:600px;
+    margin:6rem 18rem;
+    background-color:white;
+    display: grid;
+    grid-template-columns: [col-start] 1fr [col-end] 1fr;
+    /*grid-template-rows: [row-start] 1fr [row-2] 2fr;*/
+    
+    grid-template-areas: 
+    "a a"
+    "b c";
+}
+
+.join{
+    padding:2rem;
+    grid-area: a;
 
 }
-.subs > h2 {
+
+.join >h1 {
+    margin-bottom:20px;
+}
+.join > h2 {
+    color:hsl(71, 73%, 54%);
+    margin-bottom:20px;
+}
+.join > p {
+    color:hsl(218, 22%, 67%);
+}
+
+.subs{
+    background-color:  hsl(179, 62%, 43%);
+    padding:2rem;
+    color:hsl(204, 43%, 93%);
+    grid-area: b;
+}
+.subs >h2{
+    margin-bottom:20px;
+}
+
+p{
+    margin-bottom:5px;
+}
+.why{
+    background-color:  hsl(179, 62%, 43%, .8);
+    padding:2rem;
+    color:hsl(204, 43%, 93%);
+    grid-area: c;
+}
+
+.why >h2{
+    margin-bottom:20px;
+}
+
+
+
+h1{
+    color:hsl(179, 62%, 43%);
+}
+h2 {
     color:hsl(204, 43%, 93%);
 }
 
-button {
+ul{
+    margin-bottom: 10px;
+}
+li{
+    display: inline;
+  
+}
+#price {
+    font-weight: 700;
+    font-size: 30px;
+}
 
+.sign {
+    color:hsl(204, 43%, 93%);
+    border:none;
+    border-radius: 5px;
+    width:250px;
+    padding: 10px;
+    margin-top:20px;
     background-color: hsl(71, 73%, 54%);
 }
