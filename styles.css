@@ -3,13 +3,21 @@
     padding: 0;
 }
 
-
 body {
     background-color: hsl(218, 22%, 67%);
     font-family: sans-serif;
     position:relative;
 }
 
+.container {
+background-color: rgb(197, 6, 6);
+
+}
 .subs > h2 {
     color:hsl(204, 43%, 93%);
+}
+
+button {
+
+    background-color: hsl(71, 73%, 54%);
 }
